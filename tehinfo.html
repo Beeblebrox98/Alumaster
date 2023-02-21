@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumaster</title>
+    <link rel="icon" href="/styles/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;700&family=Jost:wght@100;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="/">
+                        <img src="styles/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li class="header-product-menu"><a href="/products.html">Продукция</a>
+                            <ul>
+                                <li><a href="/products.html?category=1">Алюминиевые профильные системы</a></li>
+                                <li><a href="/products.html?category=2">Оконно-дверная фурнитура</a></li>
+                                <li><a href="/products.html?category=3">Уплотнители</a></li>
+                                <li><a href="/products.html?category=4">Термовставки</a></li>
+                                <li style="padding-bottom: 12px;"><a href="/products.html?category=5">Спейсеры</a></li>
+                            </ul>
+                        </li>
+                        <li><a a href="contacts.html" class="second-li">Контакты</a></li>
+                        <li class="header-about-menu" style="border-bottom: 2px solid #EB2626; padding: 0 0 4px 0;"><a
+                                style="color: #eb2626;">О
+                                нас</a>
+                            <ul>
+                                <li><a a href="company.html">О компании</a></li>
+                                <li style="padding-bottom: 12px;"><a a href="tehinfo.html">Техническая информация</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-container">
+                    <img src="styles/img/phone.svg" alt="">
+                    <a class="phone" href="tel:+79884289999">
+                        <p>+7 (988) 428-99-99</p>
+                    </a>
+                    <button class="head-button" onclick="callButton1()">Обратный звонок</button>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <div class="page-teh-container">
+                <div class="teh-container">
+                    <div class="breadcrumbs">
+                        <a href="/index.html">Главная</a>
+                        <a>Техническая информация</a>
+                    </div>
+                    <h2>Техническая информация</h2>
+                    <div class="teh-info-container">
+                        <div class="teh-info-menu">
+                            <div class="teh-info-block">
+                                <h3>Категория</h3>
+                                <div onclick="tehSort()"><a style="margin: 12px 0 0 0;">Все</a></div>
+                                <div onclick="tehSort('fasad')"><a>Фасадная серия</a></div>
+                                <div onclick="tehSort('dveri')"><a>Дверная серия</a></div>
+                                <div onclick="tehSort('okna-dveri')"><a>Оконно-дверная серия</a></div>
+                                <div onclick="tehSort('pod-dveri')"><a>Подъемно-дверная серия</a></div>
+                                <div onclick="tehSort('perila')"><a>Серия перильных ограждений</a></div>
+                                <div onclick="tehSort('balkon')"><a style="margin: 8px 0 24px 0;">Система балконного
+                                        остекления</a></div>
+                            </div>
+                        </div>
+                        <div class="teh-info">
+                            <div data-teh-id='fasad' class="fasad1"><a href="/styles/img/teh-info/KRF_40.pdf"
+                                    target="_blank"><img src="/styles/img/KRF-40.svg" alt="KRF-40"></a>
+                            </div>
+                            <div data-teh-id='fasad' class="fasad2"><a href="/styles/img/teh-info/KRF_50.pdf"
+                                    target="_blank"><img src="/styles/img/KRF-50.svg" alt="KRF-50"></a></div>
+                            <div data-teh-id='dveri' class="dveri"><a href="/styles/img/teh-info/KRD-40.pdf"
+                                    target="_blank"><img src="/styles/img/KRD-40.svg" alt="KRD-40"></a></div>
+                            <div data-teh-id='okna-dveri' class="okna-dveri1"><a href="/styles/img/teh-info/KRWD-45.pdf"
+                                    target="_blank"><img src="/styles/img/KRWD-45.svg" alt="KRWD-45"></a></div>
+                            <div data-teh-id='okna-dveri' class="okna-dveri2"><a href="/styles/img/teh-info/KRWD-64.pdf"
+                                    target="_blank"><img src="/styles/img/KRWD-64.svg" alt="KRWD-64"></a></div>
+                            <div data-teh-id='okna-dveri' class="okna-dveri3"><a href="/styles/img/teh-info/KRWD-71.pdf"
+                                    target="_blank"><img src="/styles/img/KRDW-71.svg" alt="KRDW-71"></a></div>
+                            <div data-teh-id='pod-dveri' class="pod-dveri"><a href="/styles/img/teh-info/KRLS-64.pdf"
+                                    target="_blank"><img src="/styles/img/KRLS-64.svg" alt="KRLS-64"></a>
+                            </div>
+                            <div data-teh-id='perila' class="perila"><a href="/styles/img/teh-info/KRR.pdf"
+                                    target="_blank"><img src="/styles/img/KRR.svg" alt="KRR"></a></div>
+                            <div data-teh-id='balkon' class="balkon1"><a href="/styles/img/teh-info/KRB-35.pdf"
+                                    target="_blank"><img src="/styles/img/KRB-35.svg" alt="KRB-35"></a></div>
+                            <div data-teh-id='balkon' class="balkon2"><a href="/styles/img/teh-info/C640_P400.pdf"><img
+                                        src="/styles/img/C640-P400.svg" alt="C640-P400"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-socials">
+                    <div class="footer-contacts">
+                        <h2>Мы в соцсетях</h2>
+                        <a href="https://t.me/alumaster05" target="_blank">
+                            <img src="/styles/img/telegram.svg" alt="">
+                        </a>
+                        <!-- <a href="">
+                            <img src="/styles/img/vk.svg" alt="">
+                        </a> -->
+                    </div>
+                    <div class="footer-phone">
+                        <a class="phone" href="tel:+79884289999">
+                            <p>+7 (988) 428-99-99</p>
+                        </a>
+                        <button class="head-button" onclick="callButton1()">Обратный звонок</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-links">
+                    <img src="/styles/img/logo-footer.svg" alt="">
+                    <div class="footer-menu">
+                        <h3>Продукция</h3>
+                        <a href="/products.html?category=1">Алюминиевые профильные системы</a>
+                        <a href="/products.html?category=2">Оконно-дверная фурнитура</a>
+                        <a href="/products.html?category=3">Уплотнители</a>
+                        <a href="/products.html?category=4">Термовставки</a>
+                        <a href="/products.html?category=5">Спейсеры</a>
+                    </div>
+                    <div class="footer-menu-2">
+                        <h3>Бренды</h3>
+                        <a href="/products.html?brand=krauss">Krauss</a>
+                        <a href="/products.html?brand=roto">Roto</a>
+                        <a href="/products.html?brand=uventa">Uventa</a>
+                    </div>
+                    <div class="footer-menu-3">
+                        <h3>Контакты</h3>
+                        <div><img src="/styles/img/map-pin.svg" alt="">
+                            <p>г.Махачкала,<br>Юго-Восточная улица, 22, 1-й поворот</p>
+                        </div>
+                        <div><img src="/styles/img/phone-footer.svg" alt=""><a href="tel:+79884289999">
+                                <p>+7 (988) 428-99-99</p>
+                            </a></div>
+                        <div><img src="/styles/img/mail.svg" alt=""><a href="mailto:alumaster_05_ofis@mail.ru">
+                                <p>alumaster_05_ofis@mail.ru</p>
+                            </a></div>
+                        <div><img src="/styles/img/calendar.svg" alt="">
+                            <p>Пн-Суб: 09:00 до 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="hideButton1" class="main-form-container-hide">
+            <div class="main-form">
+                <a class="close-form" onclick="callButton1()">&#9587;</a>
+                <h3>Заполните форму</h3>
+                <h4>Оставьте заявку и мы свяжемся с вами незамедлительно!</h4>
+                <form name="форма на всех страницах" action="" method="post" data-netlify="true">
+                    <input type="text" placeholder="Имя" name="Имя" style="margin: 0 auto 20px auto;" required>
+                    <span></span>
+                    <input type="tel" placeholder="Телефон" name="Телефон" style="margin: 0 auto 20px auto;" required>
+                    <input type="email" placeholder="Почта" name="Почта" style="margin: 0 auto 32px auto;">
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumaster</title>
+    <link rel="icon" href="/styles/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;700&family=Jost:wght@100;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="/">
+                        <img src="styles/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li class="header-product-menu"><a href="/products.html">Продукция</a>
+                            <ul>
+                                <li><a href="/products.html?category=1">Алюминиевые профильные системы</a></li>
+                                <li><a href="/products.html?category=2">Оконно-дверная фурнитура</a></li>
+                                <li><a href="/products.html?category=3">Уплотнители</a></li>
+                                <li><a href="/products.html?category=4">Термовставки</a></li>
+                                <li style="padding-bottom: 12px;"><a href="/products.html?category=5">Спейсеры</a></li>
+                            </ul>
+                        </li>
+                        <li class="second-li" style="border-bottom: 2px solid #EB2626; padding: 0 0 4px 0;"><a a
+                                href="contacts.html" style="color: #EB2626;">Контакты</a></li>
+                        <li class="header-about-menu"><a>О нас</a>
+                            <ul>
+                                <li><a a href="company.html">О компании</a></li>
+                                <li style="padding-bottom: 12px;"><a a href="tehinfo.html">Техническая информация</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-container">
+                    <img src="styles/img/phone.svg" alt="">
+                    <a class="phone" href="tel:+79884289999">
+                        <p>+7 (988) 428-99-99</p>
+                    </a>
+                    <button class="head-button" onclick="callButton1()">Обратный звонок</button>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <div class="contacts-container">
+                <div class="breadcrumbs">
+                    <a href="/index.html">Главная</a>
+                    <a>Контакты</a>
+                </div>
+                <h2>Контакты</h2>
+                <div class="info-container">
+                    <div>
+                        <div class="contacts-info">
+                            <div class="contacts-info-block">
+                                <h3>Склад и Офис в г.Махачкала</h3>
+                                <div style="padding: 12px 24px 8px 0px;"><img src="/styles/img/map-pin-red.svg" alt="">
+                                    <p>г.Махачкала,<br>Юго-Восточная улица, 22, 1-й поворот</p>
+                                </div>
+                                <div style="padding: 0px 24px 8px 0px;"><img src="/styles/img/phone-red.svg" alt=""><a
+                                        href="tel:+79884289999">
+                                        <p>+7 (988) 428-99-99</p>
+                                    </a></div>
+                                <div style="padding: 0px 24px 8px 0px;"><img src="/styles/img/mail-red.svg" alt=""><a
+                                        href="mailto:alumaster_05_ofis@mail.ru">
+                                        <p>alumaster_05_ofis@mail.ru</p>
+                                    </a></div>
+                                <div style="padding: 0px 24px 24px 0px;"><img src="/styles/img/calendar-red.svg" alt="">
+                                    <p>Пн-Суб: 09:00 до 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tgvk">
+                            <p>Подписывайтесь на нас<span>&#8212;</span></p>
+                            <a href="https://t.me/alumaster05" target="_blank"
+                                style="width: 20px; height: 20px; margin: 3px 12px 0 0;"><img
+                                    style="margin-right: 12px;" src="/styles/img/tg-blue.svg" alt=""></a>
+                            <!-- <a href="" style="width: 20px; height: 20px; margin: 3px 0 0 0;"><img
+                                    src="/styles/img/vk-blue.svg" alt=""></a> -->
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d730.5180294036029!2d47.52193483580258!3d42.91351999452981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa88ec164e9377c2b!2zNDLCsDU0JzQ4LjciTiA0N8KwMzEnMjMuMCJF!5e0!3m2!1sru!2sru!4v1657572503005!5m2!1sru!2sru"
+                            width="697" height="500" style="border: 2px solid #EEEEEE;
+                            border-radius: 4px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="question-form-contacts">
+                    <form action="" method="post" data-netlify="true" name="форма в контактах">
+                        <h3>Возникли вопросы? Задавайте!</h3>
+                        <input type="text" name="Имя" placeholder="Имя" value="" class="form-1" required>
+                        <input type="tel" name="Телефон" placeholder="Телефон" value="" class="form-2" required>
+                        <textarea placeholder="Сообщение" name="Сообщение" class="form-3" required></textarea>
+                        <div class="break"></div>
+                        <button type="submit" value="" class="form-4">Задать вопрос</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-socials">
+                    <div class="footer-contacts">
+                        <h2>Мы в соцсетях</h2>
+                        <a href="https://t.me/alumaster05" target="_blank">
+                            <img src="/styles/img/telegram.svg" alt="">
+                        </a>
+                        <!-- <a href="">
+                            <img src="/styles/img/vk.svg" alt="">
+                        </a> -->
+                    </div>
+                    <div class="footer-phone">
+                        <a class="phone" href="tel:+79884289999">
+                            <p>+7 (988) 428-99-99</p>
+                        </a>
+                        <button class="head-button" onclick="callButton1()">Обратный звонок</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-links">
+                    <img src="/styles/img/logo-footer.svg" alt="">
+                    <div class="footer-menu">
+                        <h3>Продукция</h3>
+                        <a href="/products.html?category=1">Алюминиевые профильные системы</a>
+                        <a href="/products.html?category=2">Оконно-дверная фурнитура</a>
+                        <a href="/products.html?category=3">Уплотнители</a>
+                        <a href="/products.html?category=4">Термовставки</a>
+                        <a href="/products.html?category=5">Спейсеры</a>
+                    </div>
+                    <div class="footer-menu-2">
+                        <h3>Бренды</h3>
+                        <a href="/products.html?brand=krauss">Krauss</a>
+                        <a href="/products.html?brand=roto">Roto</a>
+                        <a href="/products.html?brand=uventa">Uventa</a>
+                    </div>
+                    <div class="footer-menu-3">
+                        <h3>Контакты</h3>
+                        <div><img src="/styles/img/map-pin.svg" alt="">
+                            <p>г.Махачкала,<br>Юго-Восточная улица, 22, 1-й поворот</p>
+                        </div>
+                        <div><img src="/styles/img/phone-footer.svg" alt=""><a href="tel:+79884289999">
+                                <p>+7 (988) 428-99-99</p>
+                            </a></div>
+                        <div><img src="/styles/img/mail.svg" alt=""><a href="mailto:alumaster_05_ofis@mail.ru">
+                                <p>alumaster_05_ofis@mail.ru</p>
+                            </a></div>
+                        <div><img src="/styles/img/calendar.svg" alt="">
+                            <p>Пн-Суб: 09:00 до 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="hideButton1" class="main-form-container-hide">
+            <div class="main-form">
+                <a class="close-form" onclick="callButton1()">&#9587;</a>
+                <h3>Заполните форму</h3>
+                <h4>Оставьте заявку и мы свяжемся с вами незамедлительно!</h4>
+                <form name="форма на всех страницах" action="" method="post" data-netlify="true">
+                    <input type="text" placeholder="Имя" name="Имя" style="margin: 0 auto 20px auto;" required>
+                    <span></span>
+                    <input type="tel" placeholder="Телефон" name="Телефон" style="margin: 0 auto 20px auto;" required>
+                    <input type="email" placeholder="Почта" name="Почта" style="margin: 0 auto 32px auto;">
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/script.js"></script>
+
+</body>
+
+</html>
